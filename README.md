@@ -15,10 +15,16 @@ Simple React Progres Circle is a circlular progress bar made into a reusable rea
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
 
+# Start
+```
+npm i react-simple-progress-circle
+```
+
 # Example
 
 ```jsx
 import React from 'react';
+import ProgressCircle from 'react-simple-progress-circle';
 
   <ProgressCircle 
         size={50} //Height and Width of the circle
