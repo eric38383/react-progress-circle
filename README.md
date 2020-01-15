@@ -1,10 +1,10 @@
-# progress-circle
+# Simple React Progress Circle
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe progress-circle here.
+Simple React Progres Circle is a circlular progress bar made into a reusable react component with React Hooks.
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
@@ -14,3 +14,22 @@ Describe progress-circle here.
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+# Example
+
+```jsx
+import React from 'react';
+  <ProgressCircle 
+        size={50} //Height and Width of the circle
+        color={'green'} //Color of the circle stroke
+        progress={20} //Number between 0 and 100
+        strokeWidth={20} //width of the circle strokes. Stroke width must be at least half of size
+        opacity={0.4} //a number between 0 and 1. 
+        time={0.4} //in seconds, for progress transition
+        timingFunction={'linear'} //linear, ease in, ease-out, east-in-out, step-start, step-end
+    />
+```
+
+
+
+

@@ -68,7 +68,8 @@ ProgressCircle.propTypes = {
   progress: PropTypes.number.isRequired,
   strokeWidth: PropTypes.number.isRequired,
   opacity: PropTypes.number.isRequired,
-  time: PropTypes.number.isRequired
+  time: PropTypes.number.isRequired,
+  timingFunction: PropTypes.oneOf(['linear', 'ease-in', 'ease-out', 'east-in-out', 'step-start', 'step-end']),
 }
 
 export default ProgressCircle;
