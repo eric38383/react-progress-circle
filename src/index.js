@@ -58,7 +58,6 @@ const ProgressCircle = ({ size, color, progress, strokeWidth, opacity, time, tim
 ProgressCircle.defaultProps = {
   color: 'grey',
   opacity: 0.4,
-  progress: 50,
   timingFunction: 'linear',
   time: 0.4
 }

@@ -9,7 +9,7 @@ class Demo extends Component {
         size={50} 
         color={'green'} 
         progress={20} 
-        strokeWidth={15} 
+        strokeWidth={20} 
       />
     </div>
   }
