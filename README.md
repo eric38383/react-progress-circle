@@ -19,6 +19,7 @@ Simple React Progres Circle is a circlular progress bar made into a reusable rea
 
 ```jsx
 import React from 'react';
+
   <ProgressCircle 
         size={50} //Height and Width of the circle
         color={'green'} //Color of the circle stroke
