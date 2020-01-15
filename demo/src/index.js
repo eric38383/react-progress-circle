@@ -1,13 +1,16 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
-
-import Example from '../../src'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import ProgressCircle from '../../src'
 
 class Demo extends Component {
   render() {
     return <div>
-      <h1>progress-circle Demo</h1>
-      <Example/>
+      <ProgressCircle 
+        size={50} 
+        color={'green'} 
+        progress={20} 
+        strokeWidth={15} 
+      />
     </div>
   }
 }
