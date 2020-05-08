@@ -1,0 +1,21 @@
+.demo-parent {
+    display: flex;
+    flex-wrap: wrap;  
+    margin-top: 100px;
+}
+
+.demo-child {
+    width: 50%;
+}
+
+.circle-parent {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circle-title {
+    margin-top: 20px;
+}
