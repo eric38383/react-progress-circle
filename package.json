@@ -1,6 +1,6 @@
 {
   "name": "react-simple-progress-circle",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "A Simple Progress Circle built with React Hooks",
   "main": "lib/index.js",
   "module": "es/index.js",
