@@ -8,7 +8,9 @@ const circumference = (radius) => {
 const ProgressCircle = ({
   size,
   color,
+  clockwise,
   progress,
+  start,
   strokeWidth,
   opacity,
   time,
@@ -20,13 +22,19 @@ const ProgressCircle = ({
   const dashArray = circumference(radius);
   const totalProgressOff = dashArray * (progress / 100);
   const totalProgress = dashArray - totalProgressOff;
+
+  const outerStyle = { position: 'relative', height: size + 'px', width: size + 'px' };
+  if(!clockwise) {
+    outerStyle['transform'] = 'rotateY(180deg)'
+  }
+  
   useEffect(() => {
     circleEl.current.setAttribute('stroke-dashoffset', totalProgress);
   });
 
   return (
     <div
-      style={{ position: 'relative', height: size + 'px', width: size + 'px' }}
+      style={outerStyle}
     >
       <svg style={{ position: 'absolute' }} height={size} width={size}>
         <circle
@@ -39,7 +47,7 @@ const ProgressCircle = ({
           strokeOpacity={opacity}
         ></circle>
       </svg>
-      <svg style={{ position: 'absolute' }} height={size} width={size}>
+      <svg style={{ position: 'absolute', transform: `rotate(${start}deg` }} height={size} width={size}>
         <circle
           ref={circleEl}
           style={{ transition: `${time}s stroke-dashoffset ${timingFunction}` }}
@@ -59,15 +67,19 @@ const ProgressCircle = ({
 
 ProgressCircle.defaultProps = {
   color: 'grey',
+  clockwise: true,
+  start: 0,
   opacity: 0.4,
   timingFunction: 'linear',
   time: 0.4,
 };
 
 ProgressCircle.propTypes = {
-  size: PropTypes.number.isRequired,
   color: PropTypes.string.isRequired,
+  clockwise: PropTypes.bool,
   progress: PropTypes.number.isRequired,
+  size: PropTypes.number.isRequired,
+  start: PropTypes.number,
   strokeWidth: PropTypes.number.isRequired,
   opacity: PropTypes.number.isRequired,
   time: PropTypes.number.isRequired,
