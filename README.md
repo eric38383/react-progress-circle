@@ -21,7 +21,7 @@ import ProgressCircle from 'react-simple-progress-circle';
 
   <ProgressCircle 
         size={50} //Height and Width of the circle
-        clockwise={true} // Determines is the progress should go clockwise or counter clockwise
+        clockwise={true} // Determines if the progress should go clockwise or counter clockwise
         color={'green'} //Color of the circle stroke
         progress={20} //Number between 0 and 100
         start={0} // Where the progress circle will start. 0 will start at 90deg clockwise from the top
