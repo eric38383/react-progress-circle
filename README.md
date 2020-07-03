@@ -1,15 +1,12 @@
 # Simple React Progress Circle
 
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
 Simple React Progres Circle is a circlular progress bar made into a reusable react component with React Hooks.
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=react-progress-circle
+[npm-badge]: https://img.shields.io/npm/v/react-simple-progress-circle?style=plastic
 [npm]: https://www.npmjs.org/package/react-simple-progress-circle
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=react-progress-circle
-[coveralls]: https://coveralls.io/github/user/repo
 
 # Start
 ```
