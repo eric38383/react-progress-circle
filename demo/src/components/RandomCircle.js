@@ -19,7 +19,9 @@ const RandomCircle = () => {
 		<div className="circle-parent">
 			<ProgressCircle
 				size={250} //Height and Width of the circle
+				clockwise={false}
 				color={'green'} //Color of the circle stroke
+				start={0}
 				progress={randomNumber} //Number between 0 and 100
 				strokeWidth={50} //width of the circle strokes. Stroke width must be at least half of size
 				opacity={0.4} //a number between 0 and 1.

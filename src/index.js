@@ -26,6 +26,7 @@ const ProgressCircle = ({
   const outerStyle = { position: 'relative', height: size + 'px', width: size + 'px' };
   if(!clockwise) {
     outerStyle['transform'] = 'rotateY(180deg)'
+    start = start - 180
   }
   
   useEffect(() => {
