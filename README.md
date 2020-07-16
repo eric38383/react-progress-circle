@@ -25,8 +25,8 @@ import ProgressCircle from 'react-simple-progress-circle';
         color={'green'} //Color of the circle stroke
         progress={20} //Number between 0 and 100
         start={0} // Where the progress circle will start. 0 will start at 90deg clockwise from the top
-        strokeWidth={20} //width of the circle strokes. Stroke width must be at least half of size
-        opacity={0.4} //a number between 0 and 1. The background opacity of the color. 
+        strokeWidth={20} //width of the circle strokes. Stroke width must be no more than half the size of the circle.
+        opacity={0.4} //a number between 0 and 0.9. The background opacity of the color. An opacity of more than 0.7 may not be noticable to the human eye
         time={0.4} //in seconds, for progress transition
         timingFunction={'linear'} //linear, ease in, ease-out, east-in-out, step-start, step-end
     />

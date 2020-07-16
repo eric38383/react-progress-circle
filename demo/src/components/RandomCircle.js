@@ -18,15 +18,15 @@ const RandomCircle = () => {
   	return (
 		<div className="circle-parent">
 			<ProgressCircle
-				size={250} //Height and Width of the circle
+				size={250} 
 				clockwise={false}
-				color={'green'} //Color of the circle stroke
+				color={'green'} 
 				start={0}
-				progress={randomNumber} //Number between 0 and 100
-				strokeWidth={50} //width of the circle strokes. Stroke width must be at least half of size
-				opacity={0.4} //a number between 0 and 1.
-				time={0.4} //in seconds, for progress transition
-				timingFunction={'linear'} //linear, ease in, ease-out, east-in-out, step-start, step-end
+				progress={randomNumber} 
+				strokeWidth={50} 
+				opacity={0.4} 
+				time={0.4} 
+				timingFunction={'linear'}
 			/>
 			<div className="circle-title">Random Circle</div>
 		</div>

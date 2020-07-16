@@ -21,13 +21,15 @@ const FullCircle = () => {
 	return (
 		<div className="circle-parent">
 			<ProgressCircle
-				color={'red'} //Color of the circle stroke
-				progress={number} //Number between 0 and 100
-				size={250} //Height and Width of the circle
-				strokeWidth={50} //width of the circle strokes. Stroke width must be at least half of size
-				opacity={0.4} //a number between 0 and 1.
-				timingFunction={'linear'} //linear, ease in, ease-out, east-in-out, step-start, step-end
-				time={0.8} //in seconds, for progress transition
+				color={'blue'} 
+				clockwise={true}
+				progress={number} 
+				size={200}
+				strokeWidth={30}
+				start={270}
+				opacity={.7}
+				timingFunction={'ease-in'}
+				time={1.5}
 			/>
 			<div className="circle-title">Full Circle</div>
 		</div>
